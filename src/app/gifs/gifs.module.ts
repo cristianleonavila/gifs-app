@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { GifsCardListComponent } from './components/gifs-card-list/gifs-card-list.component';
+import { GifCardComponent } from './components/gif-card/gif-card.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -10,10 +12,12 @@ import { GifsCardListComponent } from './components/gifs-card-list/gifs-card-lis
   declarations: [
     HomeComponent,
     SearchBoxComponent,
-    GifsCardListComponent
+    GifsCardListComponent,
+    GifCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     HomeComponent
